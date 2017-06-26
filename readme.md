@@ -1,3 +1,3 @@
-## All code goes here
+## Torrey Techies FTC Code Repo
 
-This is the folder for all code for the 2016-2017 season.
+This repo contains all the code since Velocity Vortex
