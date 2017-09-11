@@ -1,6 +1,7 @@
 package org.firstinspires.ftc.teamcode.Velocity;
 
 import com.qualcomm.hardware.adafruit.AdafruitBNO055IMU;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.ColorSensor;
@@ -18,6 +19,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 
 @TeleOp(name="NewBotTeleOp9367", group="9367")
+@Disabled
 public class NewBotTeleOp9367 extends OpMode {
 
     //assigning state variables

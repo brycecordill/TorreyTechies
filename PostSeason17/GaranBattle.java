@@ -1,5 +1,6 @@
 package org.firstinspires.ftc.teamcode.PostSeason17;
 
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
@@ -9,6 +10,7 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
  * Created by bryce on 3/23/17.
  */
 @TeleOp(name = "GaranBattle", group = "2017")
+@Disabled
 public class GaranBattle extends OpMode {
 
     DcMotor frDrive, flDrive, brDrive, blDrive, meh;
