@@ -13,6 +13,7 @@ import com.qualcomm.robotcore.hardware.Servo;
  * Created by Bryce on 11/2/2016.
  */
 @TeleOp(name="Operation: Telly (NIKKO)", group="3650")
+@Disabled
 public class NikkoTeleOp3650 extends OpMode {
 
     //HI v2

@@ -1,5 +1,6 @@
 package org.firstinspires.ftc.teamcode.Velocity;
 
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.ColorSensor;
@@ -13,6 +14,7 @@ import com.qualcomm.robotcore.hardware.Servo;
  */
 
 @TeleOp(name="Telly Single", group="3650")
+@Disabled
 public class OpTellySingle3650 extends OpMode {
 
     //TeleOp using a single controller

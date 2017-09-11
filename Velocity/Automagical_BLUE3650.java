@@ -1,6 +1,7 @@
 package org.firstinspires.ftc.teamcode.Velocity;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.ColorSensor;
 import com.qualcomm.robotcore.hardware.DcMotor;
@@ -12,6 +13,7 @@ import com.qualcomm.robotcore.hardware.TouchSensor;
  * Created by Bryce on 1/20/2017.
  */
 @Autonomous(name = "Automagical: Blue", group = "3650")
+@Disabled
 public class Automagical_BLUE3650 extends LinearOpMode {
 
 

@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 
 @TeleOp(name="Test9367", group="9367")
+@Disabled
 public class Test9367 extends OpMode {
     ColorSensor colorSensor;
     OpticalDistanceSensor distanceSensor1, distanceSensor2;

@@ -1,12 +1,14 @@
 package org.firstinspires.ftc.teamcode.Velocity;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 
 
 @Autonomous(name = "Automagically Shoot", group = "3650")
+@Disabled
 public class AutoShoot3650 extends LinearOpMode {
 
 

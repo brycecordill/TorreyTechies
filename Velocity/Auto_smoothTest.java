@@ -1,6 +1,7 @@
 package org.firstinspires.ftc.teamcode.Velocity;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.ColorSensor;
 import com.qualcomm.robotcore.hardware.DcMotor;
@@ -12,6 +13,7 @@ import com.qualcomm.robotcore.hardware.TouchSensor;
 
 
 @Autonomous(name = "Auto_smoothTest", group = "3650")
+@Disabled
 public class Auto_smoothTest extends LinearOpMode{
 
     ColorSensor colorSensor;

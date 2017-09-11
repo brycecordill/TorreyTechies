@@ -1,6 +1,7 @@
 package org.firstinspires.ftc.teamcode.Velocity;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
@@ -9,6 +10,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
  */
 
 @Autonomous(name = "Automagical BlueG", group = "3650")
+@Disabled
 public class Auto_Blue_Gyro extends LinearOpMode {
 
     Hardware_3650 hw;

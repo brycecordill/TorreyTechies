@@ -1,5 +1,6 @@
 package org.firstinspires.ftc.teamcode.Velocity;
 
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.ColorSensor;
@@ -11,6 +12,7 @@ import com.qualcomm.robotcore.hardware.Servo;
  * Modified by Wenlong on 12/5/2016.
  */
 @TeleOp(name="TeleOp 01/07", group="9367")
+@Disabled
 public class TeleOp9367 extends OpMode {
 
     //assigning state variables
