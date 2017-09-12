@@ -2,7 +2,6 @@ package org.firstinspires.ftc.teamcode.Relic;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-import com.vuforia.Vuforia;
 
 import org.firstinspires.ftc.robotcore.external.ClassFactory;
 import org.firstinspires.ftc.robotcore.external.navigation.RelicRecoveryVuMark;
@@ -18,6 +17,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
 public class Automagical_1_3650 extends LinearOpMode {
 
     VuforiaLocalizer vuforia;
+    PrivateData priv = new PrivateData();
 
     @Override
     public void runOpMode() throws InterruptedException {
@@ -26,7 +26,7 @@ public class Automagical_1_3650 extends LinearOpMode {
         int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
         VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(cameraMonitorViewId);
 
-        parameters.vuforiaLicenseKey = "";
+        parameters.vuforiaLicenseKey = priv.vuforiaKey;
 
         //use back camera
         parameters.cameraDirection = VuforiaLocalizer.CameraDirection.BACK;
