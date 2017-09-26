@@ -16,8 +16,8 @@ import org.firstinspires.ftc.robotcore.external.navigation.VuforiaTrackables;
 @Autonomous(name="Automagical 1", group ="3650")
 public class Automagical_1_3650 extends LinearOpMode {
 
-    VuforiaLocalizer vuforia;
-    PrivateData priv = new PrivateData();
+    private VuforiaLocalizer vuforia;
+    private PrivateData priv = new PrivateData();
 
     @Override
     public void runOpMode() throws InterruptedException {
@@ -30,6 +30,8 @@ public class Automagical_1_3650 extends LinearOpMode {
 
         //use back camera
         parameters.cameraDirection = VuforiaLocalizer.CameraDirection.BACK;
+        //Shows XYZ axes on detected object (Teapots, buildings, and none also valid)
+        parameters.cameraMonitorFeedback = VuforiaLocalizer.Parameters.CameraMonitorFeedback.TEAPOT;
         this.vuforia = ClassFactory.createVuforiaLocalizer(parameters);
 
         //Get image identification files
