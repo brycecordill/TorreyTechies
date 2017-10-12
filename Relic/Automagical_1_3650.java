@@ -26,7 +26,9 @@ public class Automagical_1_3650 extends LinearOpMode {
         int cameraMonitorViewId = hardwareMap.appContext.getResources().getIdentifier("cameraMonitorViewId", "id", hardwareMap.appContext.getPackageName());
         VuforiaLocalizer.Parameters parameters = new VuforiaLocalizer.Parameters(cameraMonitorViewId);
 
+
         parameters.vuforiaLicenseKey = priv.vuforiaKey;
+
 
         //use back camera
         parameters.cameraDirection = VuforiaLocalizer.CameraDirection.BACK;
