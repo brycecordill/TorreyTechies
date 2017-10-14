@@ -12,8 +12,8 @@ import com.qualcomm.robotcore.hardware.Servo;
 
 @TeleOp(name = "Operation Telly", group = "3650")
 public class TeleOp_3650 extends OpMode{
-    DcMotor lDrive, rDrive, lift1;
-    Servo armServo;
+    DcMotor lDrive, rDrive, lift1, lift2;
+    Servo armServo, grabber;
 
     @Override
     public void init() {
@@ -23,25 +23,30 @@ public class TeleOp_3650 extends OpMode{
         lDrive.setDirection(DcMotor.Direction.REVERSE);
 
         lift1 = hardwareMap.dcMotor.get("lift1");
+        lift2 = hardwareMap.dcMotor.get("lift2");
 
         armServo = hardwareMap.servo.get("armServo");
+        grabber = hardwareMap.servo.get("grabber");
 
     }
 
     @Override
     public void loop() {
-        lDrive.setPower(gamepad1.left_stick_y*(0.7));
-        rDrive.setPower(gamepad1.right_stick_y*(0.7));
+        lDrive.setPower(gamepad1.left_stick_y);
+        rDrive.setPower(gamepad1.right_stick_y);
 
         // lift
         if (gamepad2.right_trigger > 0.1){
-            lift1.setPower(gamepad2.right_trigger);
+            lift1.setPower(0.7 * gamepad2.right_trigger);
+            lift2.setPower(0.7 * gamepad2.right_trigger);
         }
         else if (gamepad2.left_trigger > 0.1){
-            lift1.setPower(-gamepad2.left_trigger);
+            lift1.setPower(-0.7 * gamepad2.left_trigger);
+            lift2.setPower(-0.7 * gamepad2.left_trigger);
         }
         else{
             lift1.setPower(0);
+            lift2.setPower(0);
         }
 
         // armServo
@@ -50,6 +55,20 @@ public class TeleOp_3650 extends OpMode{
         }
         else if (gamepad1.dpad_down){
             armServo.setPosition(0.1);
+        }
+
+        // Grabber servo (Need to test values!)
+        if (gamepad2.dpad_left){
+            // close
+            grabber.setPosition(1.0);
+        }
+        else if (gamepad2.dpad_right){
+            // open
+            grabber.setPosition(0.0);
+        }
+        else{
+            // stop
+            grabber.setPosition(0.5);
         }
 
 
